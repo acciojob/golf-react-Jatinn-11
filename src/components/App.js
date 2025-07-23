@@ -44,12 +44,12 @@ class App extends Component {
             return <button className = "start" onClick={this.buttonClickHandler}>Start</button>
         }
     }
-
+ 
     render() {
         return (
             <div className="playground">
                 {this.renderBallOrButton()}
-            </div>
+            </div> 
         )
     }
 }
