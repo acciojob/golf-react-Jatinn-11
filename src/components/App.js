@@ -25,6 +25,7 @@ class App extends Component {
                 posi: newPosi,
                 ballPosition: { left: `${newPosi}px` }
             });
+            // console.log(newPosi)
         }
     }
 
@@ -38,9 +39,9 @@ class App extends Component {
 
     renderBallOrButton() {
         if (this.state.renderBall) {
-            return <div className="ball" style={this.state.ballPosition}></div>
+            return <div className="ball" id = "ball" style={this.state.ballPosition}></div>
         } else {
-            return <button onClick={this.buttonClickHandler}>Start</button>
+            return <button className = "start" onClick={this.buttonClickHandler}>Start</button>
         }
     }
 
